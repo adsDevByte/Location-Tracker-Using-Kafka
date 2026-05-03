@@ -355,4 +355,4 @@ io.emit("location:broadcast", event)  →  all connected browsers
 - **Single Kafka consumer group.** Running multiple instances of the app server under the same `groupId` means only one instance receives each Kafka message. To broadcast to all Socket.IO clients across multiple instances, pair this with a Redis adapter (`@socket.io/redis-adapter`) and publish from each instance independently.
 - **No token refresh.** Access tokens expire after one hour and the client is not automatically refreshed. Users must log in again after expiry.
 - **No rate limiting** on the `/login` route or the OIDC `/authorize/submit` endpoint, making brute-force attacks possible in a public deployment.
->>>>>>> ccf18fb (made the Location Tracking App)
+
