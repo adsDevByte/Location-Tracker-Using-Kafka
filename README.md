@@ -356,3 +356,7 @@ io.emit("location:broadcast", event)  →  all connected browsers
 - **No token refresh.** Access tokens expire after one hour and the client is not automatically refreshed. Users must log in again after expiry.
 - **No rate limiting** on the `/login` route or the OIDC `/authorize/submit` endpoint, making brute-force attacks possible in a public deployment.
 
+
+
+https://github.com/user-attachments/assets/2d026a98-6fa2-41f4-a919-e9ff511134aa
+
