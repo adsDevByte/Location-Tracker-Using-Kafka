@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Live Tracker</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="login-card">
+      <h1>🚀 Live Tracker</h1>
+      <p class="subtitle">Real-time location sharing, powered by OpenID Connect</p>
+      <a href="/login" class="oidc-btn">Sign In / Create Account</a>
+      <p class="hint">New here? You can create a free account on the next screen.</p>
+    </div>
+  </div>
+  <script>
+    // If already logged in, go straight to app
+    if (localStorage.getItem("access_token")) {
+      window.location.href = "/app.html";
+    }
+  </script>
+</body>
+</html>
